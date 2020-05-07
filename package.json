@@ -1,25 +1,15 @@
 {
   "name": "@martaly/card",
-  "version": "0.0.1",
-  "description": "Personal npm card for Alyson Martin (@Apprenante Becode)",
-  "main": "dist/card.js",
-  "unpkg": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Martaly/Aly-npxcard.git"
   },
-  "scripts": {
-    "prepare": "node src/htmlify",
-    "prepublishOnly": "rm -rf dist && webpack"
-  },
   "bin": {
-    "card": "bin/index.js"
+    "aly": "./index.js"
   },
-  "files": [
-    "bin",
-    "dist",
-    "index.html"
-  ],
   "keywords": [
     "card",
     "npm",
@@ -33,7 +23,8 @@
   "dependencies": {
     "drawille": "^1.1.1",
     "gradient-string": "^1.2.0",
-    "log-update": "^4.0.0"
+    "log-update": "^4.0.0",
+    "boxen": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -47,56 +38,5 @@
     "webpack": "^4.28.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2"
-  },
-  "myCard": {
-    "info": {
-      "name": "Alyson Martin",
-      "handle": "Apprenante Becode",
-      "twitter": "Apprenante Becode",
-      "npm": "martaly",
-      "github": "Martaly",
-      "linkedin": "Alyson Martin",
-      "web": "none",
-      "work": "Developpeuse Web"
-    },
-    "data": [
-      "          <white>{{name}}</><green> / </><cyan>{{handle}}</>",
-      "",
-      {
-        "label": "<blue>Work</>",
-        "text": "{{work}}"
-      },
-      "",
-      {
-        "label": "Twitter",
-        "text": "https://twitter.com/<cyan>{{twitter}}</>",
-        "when": "{{twitter}}"
-      },
-      {
-        "label": "npm",
-        "text": "https://www.npmjs.com/<red>~{{npm}}</>",
-        "when": "{{npm}}"
-      },
-      {
-        "label": "GitHub",
-        "text": "https://github.com/<green>{{github}}</>",
-        "when": "{{github}}"
-      },
-      {
-        "label": "LinkedIn",
-        "text": "https://www.linkedin.com/in/<blue>{{linkedin}}</>",
-        "when": "{{linkedin}}"
-      },
-      {
-        "label": "Web",
-        "text": "<cyan>{{web}}</>",
-        "when": "{{web}}"
-      },
-      "",
-      {
-        "label": "Card",
-        "text": "<red>npx</> {{_packageName}}"
-      }
-    ]
   }
 }
