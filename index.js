@@ -46,7 +46,7 @@ const data = {
   labelStudies: chalk.bold("      Studies | "),
   labelNpm: chalk.bold("               Npm | "),
   labelGithub: chalk.bold("                Github | "),
-  labelLinkedin: chalk.bold("LinkIn | "),
+  labelLinkedin: chalk.bold("LinkedIn | "),
   labelInstagram: chalk.bold(" Instagram | "),
 };
 
