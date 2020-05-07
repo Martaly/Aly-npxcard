@@ -6,7 +6,7 @@ Via npx:
 npx @martaly/card
 ```
 
-# Discover me
+
 
 
 
